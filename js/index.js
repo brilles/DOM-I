@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   cta: {
-    h1: "DOM <br/> Is <br/>Awesome",
+    h1: "DOM<br/> Is<br/>Awesome",
     button: "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -53,12 +53,17 @@ for (var i = 0; i < links.length; i++) {
   links[i].textContent = siteContent["nav"][`nav-item-${i + 1}`];
 }
 links.forEach(e => (e.style.color = "green"));
-let extra1 = (document.createElement("a").textContent = "Hello");
+let extra1 = (document.createElement("a").textContent = "Clients");
 navigation.prepend(extra1);
-let extra2 = (document.createElement("a").textContent = "Goodbye");
-navigation.append(extra2);
+
+let navNode = document.createElement("a");
+let textNavNode = document.createTextNode("Log In");
+
+navNode.appendChild(textNavNode);
+navigation.appendChild(navNode);
 
 navigation.style.color = "green";
+navNode.style.color = "green";
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
