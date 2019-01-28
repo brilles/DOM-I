@@ -44,12 +44,21 @@ const siteContent = {
 
 //---------------------------------header---------------------------------
 let links = document.querySelectorAll("header nav a");
+let navigation = document.querySelector("nav");
+
 // links[0].textContent = siteContent["nav"]["nav-item-1"];
 // links[1].textContent = siteContent["nav"]["nav-item-2"];
 
 for (var i = 0; i < links.length; i++) {
   links[i].textContent = siteContent["nav"][`nav-item-${i + 1}`];
 }
+links.forEach(e => (e.style.color = "green"));
+let extra1 = (document.createElement("a").textContent = "Hello");
+navigation.prepend(extra1);
+let extra2 = (document.createElement("a").textContent = "Goodbye");
+navigation.append(extra2);
+
+navigation.style.color = "green";
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
