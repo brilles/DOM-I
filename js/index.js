@@ -77,7 +77,7 @@ let ctaBtn = (document.querySelector(".cta-text button").textContent =
   siteContent.cta.button);
 
 document.querySelector("button").addEventListener("click", function() {
-  document.querySelector(".cta-text button").textContent = "Button Clicked!";
+  document.querySelector(".cta-text ").textContent = "Button Clicked!";
 });
 
 let ctaImg = document.getElementById("cta-img");
