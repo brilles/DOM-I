@@ -66,31 +66,6 @@ document.querySelector("nav").prepend(navNode2);
 navNode.style.color = "green";
 navNode2.style.color = "green";
 
-// let links = document.querySelectorAll("header nav a");
-// let navigation = document.querySelector("nav");
-
-// // links[0].textContent = siteContent["nav"]["nav-item-1"];
-// // links[1].textContent = siteContent["nav"]["nav-item-2"];
-
-// for (var i = 0; i < links.length; i++) {
-//   links[i].textContent = siteContent["nav"][`nav-item-${i + 1}`];
-// }
-
-// links.forEach(e => (e.style.color = "green"));
-// let extra1 = (document.createElement("a").textContent = "Clients");
-// navigation.prepend(extra1);
-
-// let navNode = document.createElement("a");
-// let textNavNode = document.createTextNode("Log In");
-
-// navNode.appendChild(textNavNode);
-// navigation.appendChild(navNode);
-
-// navigation.style.color = "green";
-// navNode.style.color = "green";
-
-
-
 //CTA
 document.querySelector("h1").innerHTML = siteContent["cta"]["h1"];
 document.querySelector("button").textContent = siteContent["cta"]["button"];
